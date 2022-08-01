@@ -1,0 +1,568 @@
+@mixin fa5($icon) {
+  content: $icon;
+  font-family: 'Font Awesome 5 Pro';
+}
+@mixin box($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+@mixin font-size($font-size, $line-height: normal, $letter-spacing: normal) {
+  font-size: $font-size * 1rem;
+
+  @if $line-height!=normal {
+    line-height: $line-height * 1rem;
+  }
+
+  @if $letter-spacing!=normal {
+    letter-spacing: $letter-spacing * 1px;
+  }
+}
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin owl($leftright) {
+  &.owl-carousel {
+    .owl-nav button.owl-prev {
+      background: transparent;
+      border: 0;
+      left: $leftright;
+      transition: all 0.5s;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      @include media-breakpoint-down(md) {
+        left: -0.5rem;
+      }
+    }
+    .owl-nav button.owl-next {
+      background: transparent;
+      border: 0;
+      right: $leftright;
+      transition: all 0.5s;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      @include media-breakpoint-down(md) {
+        right: -0.5rem;
+      }
+    }
+    .owl-nav button.owl-prev,
+    .owl-nav button.owl-next {
+      &:hover {
+        background-color: transparent;
+        color: #333;
+      }
+      i {
+        background: #fafafa;
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+@mixin font-face($font-name, $path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: quote($font-name);
+    src: url($path + '.eot');
+    src: url($path + '.eot?#iefix') format('embedded-opentype'),
+    url($path + '.woff') format('woff'),
+    url($path + '.ttf') format('truetype'),
+    url($path + '.svg##{$font-name}') format('svg');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+@mixin img-cover($height) {
+  &.image-cover {
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: $height;
+    .main-image {
+      right: 0;
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      left: 0;
+      top: 0;
+      position: absolute;
+      -o-object-position: 50% 50%;
+      object-position: 50% 50%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      font-family: 'object-fit: cover;';
+    }
+  }
+}
+@mixin box-product-sale($height) {
+  .box-product {
+    text-align: center;
+    background: #fff;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    @include media-breakpoint-down(sm) {
+      padding: 0.5rem;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      left: 0;
+      -o-object-position: 50% 50%;
+      object-position: 50% 50%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      font-family: 'object-fit: cover;';
+    }
+  }
+}
+@mixin box-product($height) {
+  .box-product {
+    text-align: center;
+    background: #fff;
+    border-radius: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    @include media-breakpoint-down(sm) {
+      padding: 0.5rem;
+    }
+    &:hover {
+      box-shadow: 0 3px 6px #00000029;
+    }
+    .box-product-media {
+      text-align: center;
+      position: relative;
+      transition: all 0.3s ease;
+      overflow: hidden;
+      &:hover {
+        box-shadow: 0 3px 6px #00000029;
+      }
+      & .image-cover {
+        position: relative;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+        padding-top: $height;
+        cursor: pointer;
+        img {
+          width: 100%;
+          height: 100%;
+          top: 0;
+          right: 0;
+          left: 0;
+          position: absolute;
+          -o-object-position: 50% 50%;
+          object-position: 50% 50%;
+          -o-object-fit: cover;
+          object-fit: cover;
+          font-family: 'object-fit: cover;';
+        }
+      }
+      &__image:hover + .box-product__image-tooltip {
+        top: 0;
+      }
+      &__tooltip {
+        position: absolute;
+        background: #0006;
+        top: 100%;
+        @include box(100%);
+        left: 0;
+        z-index: 3;
+        padding: 12rem 2rem 0.7rem;
+        transition: all 0.4s ease;
+        cursor: pointer;
+        &--top {
+          padding-right: 3.5rem;
+          position: relative;
+        }
+        &__sale-off {
+          @include font-size(1.4, 1.9);
+          padding: 0.5rem 1rem;
+          background-color: $secondary-color;
+          color: $white;
+          display: inline-block;
+          border-radius: 4px;
+          text-transform: uppercase;
+          margin-bottom: 1.5rem;
+        }
+        &__name a {
+          @include font-size(1.6, 2.2);
+          font-weight: 600;
+          display: block;
+          margin-bottom: 1rem;
+          color: $black;
+        }
+        &__price {
+          @include font-size(2.4, 3.3);
+          font-weight: 600;
+          color: $secondary-color;
+          margin-bottom: 1rem;
+        }
+        &.toggle {
+          top: 0;
+        }
+      }
+    }
+    &-sale-off {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: $primary-color;
+      color: #fff;
+      position: absolute;
+      top: 1.5rem;
+      left: 1.5rem;
+      padding: 0.5rem;
+      border-radius: 2px;
+      z-index: 2;
+      &__number {
+        @include font-size(1.6, 2.2);
+
+        @include media-breakpoint-down(sm) {
+          @include font-size(1.2, 1.7);
+        }
+      }
+      &__text {
+        @include font-size(1.2, 1.7);
+        @include media-breakpoint-down(sm) {
+          @include font-size(0.8, 1.1);
+        }
+      }
+      @include media-breakpoint-down(sm) {
+        top: 0.5rem;
+        left: 0.5rem;
+      }
+    }
+    &-out-of-stock {
+      display: flex;
+      flex-direction: column;
+      background: $black;
+      color: #fff;
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      padding: 1.1rem 2.1rem 1.1rem 2rem;
+      border-radius: 4px;
+      z-index: 2;
+      &__text {
+        @include font-size(1.6, 2.2);
+        @include media-breakpoint-down(sm) {
+          @include font-size(0.8, 1.1);
+        }
+      }
+      @include media-breakpoint-down(sm) {
+        top: 0.5rem;
+        left: 0.5rem;
+      }
+    }
+    &__name {
+      a {
+        @include font-size(1.6, 2.2);
+        padding: 1rem 0;
+        color: $black;
+        display: block;
+        @include media-breakpoint-down(xl) {
+          @include font-size(1.6, 2.2);
+        }
+      }
+    }
+    &-price {
+      gap: 1rem;
+      @include media-breakpoint-down(sm) {
+        gap: 0.6rem;
+        flex-wrap: wrap;
+      }
+      &__current {
+        @include font-size(2.4, 3.3);
+        font-weight: 600;
+        color: $primary-color;
+        @include media-breakpoint-down(xl) {
+          @include font-size(2.4, 3.3);
+        }
+      }
+    }
+    &-color {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      gap: 0.5rem;
+      &__item {
+        @include box(1.6rem);
+        border: 1px solid $black;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+        &.is-select {
+          @include box(2.2rem);
+          &::before {
+            content: '';
+            @include box(100%);
+            background: transparent;
+            border-radius: 50%;
+            border: 3px solid #fff;
+          }
+        }
+      }
+      &__item--black {
+        background-color: $black;
+      }
+      &__item--blue {
+        background-color: #1F388C;
+      }
+      &__item--red {
+        background-color: $primary-color;
+      }
+      &__item--redBordeaux {
+        background-color: $redBordeaux;
+      }
+      &__item--white {
+        background-color: $white;
+      }
+      &__item--yellow {
+        background-color: $yellow;
+      }
+      &__item--pink {
+        background-color: $pink;
+      }
+      &__item--gray {
+        background-color: $gray;
+      }
+      &__item--whitish {
+        background-color: $whitish;
+      }
+      &__item--green {
+        background-color: $green;
+      }
+      &__item--violet {
+        background-color: $violet;
+      }
+      &__item--brown {
+        background-color: $brown;
+      }
+      &__item--purple {
+        background-color: $purple;
+      }
+      &__item--paleBrow {
+        background-color: $paleBrown;
+      }
+      &__item--slightPink {
+        background-color: $slightlyPink;
+      }
+    }
+    &-action {
+      width: 3.2rem;
+      display: inline-flex;
+      flex-direction: column;
+      gap: 1rem;
+      position: absolute;
+      right: 0;
+      top: 0;
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        @include box(3.2rem);
+        border: 1px solid $black;
+        border-radius: 50%;
+      }
+      &__cart::before {
+        content: '';
+        @include box(1.6rem);
+        background: url(../images/icon-cart.svg) no-repeat center;
+      }
+
+      &__view::before {
+        content: '';
+        @include box(1.6rem);
+        background: url(../images/icon-view.svg) no-repeat center;
+      }
+    }
+    &-attr {
+      @include font-size(1.4, 1.9);
+      overflow-y: auto;
+      li {
+        display: flex;
+        & + li {
+          margin-top: 0.8rem;
+        }
+      }
+      &__label {
+        flex-shrink: 0;
+        width: 9.5rem;
+        margin-right: 1rem;
+        color: $color-text;
+      }
+      &__info {
+        flex: 1;
+        font-weight: 600;
+        color: $black;
+      }
+    }
+  }
+}
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media screen and (max-width: 767px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media screen and (max-width: 1023px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+}
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+);
+@function breakpoint-next(
+  $name,
+  $breakpoints: $grid-breakpoints,
+  $breakpoint-names: map-keys($breakpoints)
+) {
+  $n: index($breakpoint-names, $name);
+  @return if(
+                  $n < length($breakpoint-names),
+                  nth($breakpoint-names, $n + 1),
+                  null
+  );
+}
+
+// Minimum breakpoint width. Null for the smallest (first) breakpoint.
+//
+//    >> breakpoint-min(sm, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))
+//    576px
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+  $min: map-get($breakpoints, $name);
+  @return if($min != 0, $min, null);
+}
+
+// Maximum breakpoint width. Null for the largest (last) breakpoint.
+// The maximum value is calculated as the minimum of the next one less 0.02px
+// to work around the limitations of `min-` and `max-` prefixes and viewports with fractional widths.
+// See https://www.w3.org/TR/mediaqueries-4/#mq-min-max
+// Uses 0.02px rather than 0.01px to work around a current rounding bug in Safari.
+// See https://bugs.webkit.org/show_bug.cgi?id=178261
+//
+//    >> breakpoint-max(sm, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))
+//    767.98px
+@function breakpoint-max($name, $breakpoints: $grid-breakpoints) {
+  $next: breakpoint-next($name, $breakpoints);
+  @return if($next, breakpoint-min($next, $breakpoints) - 0.02px, null);
+}
+
+// Returns a blank string if smallest breakpoint, otherwise returns the name with a dash infront.
+// Useful for making responsive utilities.
+//
+//    >> breakpoint-infix(xs, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))
+//    ""  (Returns a blank string)
+//    >> breakpoint-infix(sm, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))
+//    "-sm"
+@function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
+  @return if(breakpoint-min($name, $breakpoints) == null, '', '-#{$name}');
+}
+
+// Media of at least the minimum breakpoint width. No query for the smallest breakpoint.
+// Makes the @content apply to the given breakpoint and wider.
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+// Media of at most the maximum breakpoint width. No query for the largest breakpoint.
+// Makes the @content apply to the given breakpoint and narrower.
+@mixin media-breakpoint-down($name, $breakpoints: $grid-breakpoints) {
+  $max: breakpoint-max($name, $breakpoints);
+  @if $max {
+    @media (max-width: $max) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+// Media that spans multiple breakpoint widths.
+// Makes the @content apply between the min and max breakpoints
+@mixin media-breakpoint-between(
+  $lower,
+  $upper,
+  $breakpoints: $grid-breakpoints
+) {
+  $min: breakpoint-min($lower, $breakpoints);
+  $max: breakpoint-max($upper, $breakpoints);
+
+  @if $min != null and $max != null {
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  } @else if $max == null {
+    @include media-breakpoint-up($lower, $breakpoints) {
+      @content;
+    }
+  } @else if $min == null {
+    @include media-breakpoint-down($upper, $breakpoints) {
+      @content;
+    }
+  }
+}
+
+// Media between the breakpoint's minimum and maximum widths.
+// No minimum for the smallest breakpoint, and no maximum for the largest one.
+// Makes the @content apply only to the given breakpoint, not viewports any wider or narrower.
+@mixin media-breakpoint-only($name, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+  $max: breakpoint-max($name, $breakpoints);
+
+  @if $min != null and $max != null {
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  } @else if $max == null {
+    @include media-breakpoint-up($name, $breakpoints) {
+      @content;
+    }
+  } @else if $min == null {
+    @include media-breakpoint-down($name, $breakpoints) {
+      @content;
+    }
+  }
+}

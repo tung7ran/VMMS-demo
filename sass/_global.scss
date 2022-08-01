@@ -1,0 +1,95 @@
+a:hover {
+  color: $primary-color;
+}
+
+.owl-next:focus,
+.owl-prev:focus {
+  outline: none;
+}
+.owl-theme .owl-nav {
+  margin-top: 0;
+}
+.owl-carousel {
+  padding-left: 0;
+  padding-right: 0;
+}
+.btn {
+  margin: 2rem auto 0;
+  @include font-size(1.6, 2.2);
+  padding: 1.1rem 1.4rem 1.1rem 1.5rem;
+  border-radius: 0.6rem;
+  transition: all 0.3s ease;
+  display: block;
+  width: fit-content;
+  @include media-breakpoint-down(sm) {
+    margin: 1rem auto 0;
+  }
+  &.btn-primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    &:hover {
+      background-color: $primary-color;
+      color: $white;
+    }
+    &:focus {
+      background-color: $white;
+      color: $primary-color;
+    }
+    &:active {
+      background-color: $white;
+      color: $primary-color;
+    }
+  }
+}
+.product-lists .owl-stage-outer,
+.news-fashion-list .owl-stage-outer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.menu-bars-close {
+  transition: 0.5s;
+  &--toggle {
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+  }
+}
+.required {
+  color: #CB1515;
+}
+.view-all {
+  width: 16rem;
+  img {
+    padding-left: 1rem;
+    display: inline-block !important;
+    width: unset !important;
+  }
+}
+.add-size:hover, .add-to-cart:hover {
+  background: none !important;
+  color: $white !important;
+  border: 1px solid $white;
+}
+.selected-size {
+  border: none;
+  &:hover {
+    background-color: $white !important;
+    color: $primary-color !important;
+  }
+}
+.trending-btn {
+  float: left;
+}
+.mgr-1 {
+  margin-right: 1rem;
+}
+.pd-26 {
+  padding-top: 26rem !important;
+}
+
+

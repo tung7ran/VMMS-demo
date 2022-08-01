@@ -1,0 +1,201 @@
+.footer {
+  background: #F2F2F2;
+  &--top {
+    border-bottom: 10px solid $black;
+    padding: 3rem 0;
+    .policy-item {
+      display: flex;
+      @include media-breakpoint-down(md) {
+        padding-bottom: 1rem;
+      }
+      &-icon {
+        @include box(5.1rem);
+        flex-shrink: 0;
+      }
+      &-content {
+        flex: 1;
+        padding-left: 1rem;
+        &__title {
+          @include font-size(2, 2.7);
+          font-weight: 600;
+          color: $black;
+          margin-bottom: 0.5rem;
+        }
+        &__info {
+          @include font-size(1.4, 1.9);
+        }
+      }
+    }
+  }
+  &--bottom {
+    padding: 3.2rem 1.5rem 3.7rem;
+  }
+  &-col {
+    @include media-breakpoint-up(lg) {
+      &.footer-col-1 {
+        padding-right: 12rem;
+        @include media-breakpoint-down(xl) {
+          padding-right: 4rem;
+        }
+      }
+      &.footer-col-2 {
+        max-width: 28rem;
+      }
+      &.footer-col-3 {
+        max-width: 18rem;
+      }
+      &.footer-col-4 {
+        max-width: 30rem;
+        padding-left: 4rem;
+        border-left: 1px solid $black;
+      }
+    }
+    @include media-breakpoint-down(md) {
+      padding-bottom: 1.5rem;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 1.5rem;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    &-title {
+      @include font-size(2, 2.7);
+      font-weight: 600;
+      color: $black;
+      margin-bottom: 1rem;
+    }
+    &-content {
+      p {
+        @include font-size(1.2, 1.6);
+        color: $black;
+        margin-bottom: 1rem;
+        &::before {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+  &-logo {
+    padding: 1rem 0;
+    display: block;
+    img {
+      max-height: 4.1rem;
+      object-fit: contain;
+    }
+  }
+  &-bct {
+    display: block;
+    img {
+      max-height: 3.8rem;
+      object-fit: contain;
+    }
+  }
+  &-info {
+    &__address {
+      position: relative;
+      padding-left: 2rem;
+      &::before {
+        @include fa5('\f3c5');
+        position: absolute;
+        left: 0;
+        font-weight: 700;
+      }
+    }
+    &__phone {
+      position: relative;
+      padding-left: 2rem;
+      &::before {
+        @include fa5('\f879');
+        position: absolute;
+        left: 0;
+        font-weight: 700;
+      }
+    }
+    &__email {
+      position: relative;
+      padding-left: 2rem;
+      &::before {
+        @include fa5('\f0e0');
+        position: absolute;
+        left: 0;
+        font-weight: 700;
+      }
+    }
+  }
+  .menu-footer {
+    &__link a {
+      display: block;
+      @include font-size(1.2, 1.6);
+      color: $black;
+      padding-bottom: 1rem;
+    }
+  }
+  &-form {
+    display: flex;
+    width: 100%;
+    margin-bottom: 3rem;
+    &__button {
+      @include box(3.6rem);
+      @include font-size(1.2, 1.6);
+      text-transform: uppercase;
+      border: 1px solid $black;
+      border-left: 0;
+      border-radius: 0px 4px 4px 0px;
+      background: #fff;
+      flex-shrink: 0;
+    }
+    &__input {
+      @include font-size(1.2, 1.6);
+      border: 1px solid $black;
+      border-radius: 4px 0px 0px 4px;
+      flex: 1;
+      outline: none !important;
+      padding: 1.1rem 0.9rem;
+      height: 3.6rem;
+    }
+  }
+  & .social-network {
+    margin-bottom: 4.3rem;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 1.5rem;
+    }
+    &__title {
+      @include font-size(2, 2.7);
+      font-weight: 600;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      color: $black;
+    }
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      & li + li {
+        margin-left: 1.5rem;
+      }
+      li:first-child {
+        a {
+          background: $primary-color;
+        }
+      }
+      a {
+        @include box(2.4rem);
+        color: #fff;
+        font-size: 1.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $black;
+        border-radius: 50%;
+      }
+    }
+  }
+  &-copyright {
+    @include font-size(1.2, 2.2);
+    text-transform: uppercase;
+  }
+}

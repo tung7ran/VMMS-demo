@@ -1,0 +1,2255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>VMMS</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+    <link rel="stylesheet" href="./css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+<div class="wrapper home-page">
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="top-bar--left col-lg-9">
+                        <ul class="top-bar-contact">
+                            <li class="top-bar-contact__item">
+                                <i class="fas fa-phone-alt"></i>0962.180.180
+                            </li>
+                            <li class="top-bar-contact__item">
+                                <i class="fas fa-envelope"></i>info@vmms.vn
+                            </li>
+                            <li class="top-bar-contact__item">
+                                <i class="fas fa-clock"></i>Mở cửa: Từ 8:00 đến 20:30 (Tất
+                                cả các ngày trong tuần)
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="top-bar--right col-lg-3">
+                        <div class="menu-lang">
+                            <div class="menu-lang__value">Tiếng Việt</div>
+                            <div class="menu-lang__item">
+                                <a href="!#" lang="vi" class="active">Tiếng Việt</a>
+                                <a href="!#" lang="en">Tiếng Anh</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="row">
+                    <div class="header-logo header-main--left col-lg-3">
+                            <span class="menu-bars">
+                            <i class="far fa-bars"></i>
+                            </span>
+                        <a href="/" class="logo">
+                            <img srcset="./images/logo-vmms.png" alt=""/>
+                        </a>
+                        <span class="header-cart-mobi">
+                                <a href="!#" class="cart-icon position-relative">
+                                  <i class="fal fa-shopping-cart"></i>
+                                  <span class="cart-qty">
+                                    0
+                                  </span>
+                                </a>
+                            </span>
+                    </div>
+                    <div class="header-main--right col-lg-9">
+                        <div class="search-form">
+                            <form role="search" method="get" action="">
+                                <input type="search" name="" class="search-form__input"
+                                       placeholder="Nhập từ khoá tìm kiếm..."/>
+                                <button type="submit" value="Tìm kiếm" class="search-form__button">
+                                    <i class="far fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="header-account">
+                            <div class="account-icon">
+                                <img src="./images/user.svg" alt="account">
+                            </div>
+                            <div class="account-item">
+                                <div class="account-item__title">Tài khoản</div>
+                                <div class="account-item__user">
+                                    <a href="/dang-nhap">Đăng nhập / Đăng ký</a>
+                                    </dib>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-cart">
+                            <a href="!#" class="cart-icon position-relative">
+                                <i class="fal fa-shopping-cart"></i>
+                                <span class="cart-qty">3</span>
+                            </a>
+                            <div class="cart-item">
+                                <div class="cart-item__title">Giỏ hàng</div>
+                                <div class="cart-item__price">721.000 VNĐ</dib>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="vertical-menu px-4">
+                        <div class="vertical-menu-title">
+                            Danh mục sản phẩm
+                        </div>
+                    </div>
+                    <div class="header-nav px-4">
+                        <ul class="menu">
+                            <li class="menu-item active">
+                                <a href="#!" class="menu-link">Trang chủ</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#!" class="menu-link">Giới thiệu</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#!" class="menu-link">Sản phẩm</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#!" class="menu-link">Tin tức</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#!" class="menu-link">Khuyến mãi</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#!" class="menu-link">Hướng dẫn mua hàng</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#!" class="menu-link">Liên Hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="slider-home owl-carousel owl-theme">
+            <div class="slider-home__item image-cover">
+                <img src="./images/banner.jpg" class="main-image" alt=""/>
+                <div class="slider-home__item--info text-center">
+                    <p class="main-title">30% OFF</p>
+                    <h2 class="slider-home__item--info__title">BỘ SƯU TẬP MÙA HÈ 2022</h2>
+                    <p class="slider-home__item--info__caption">VMMS đã cho ra mắt bộ sư tập thời trang mới nhất dành cho phái nữ trong mùa hè 2022 này. Với phối màu sáng làm chủ đạo, bộ sưu tập giúp các quý cô thể hiện cá tính thời trang độc đáo, đầy năng động của mình</p>
+                    <a href="!#" class="btn btn-primary view-all">Xem tất cả<img src="./images/arrow.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="slider-home__item image-cover">
+                <img src="./images/banner.jpg" class="main-image" alt=""/>
+                <div class="slider-home__item--info text-center">
+                    <p class="main-title">30% OFF</p>
+                    <h2 class="slider-home__item--info__title">BỘ SƯU TẬP MÙA HÈ 2022</h2>
+                    <p class="slider-home__item--info__caption">VMMS đã cho ra mắt bộ sư tập thời trang mới nhất dành cho phái nữ trong mùa hè 2022 này. Với phối màu sáng làm chủ đạo, bộ sưu tập giúp các quý cô thể hiện cá tính thời trang độc đáo, đầy năng động của mình</p>
+                    <a href="!#" class="btn btn-primary view-all">Xem tất cả<img src="./images/arrow.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="slider-home__item image-cover">
+                <img src="./images/banner.jpg" class="main-image" alt=""/>
+                <div class="slider-home__item--info text-center">
+                    <p class="main-title">30% OFF</p>
+                    <h2 class="slider-home__item--info__title">BỘ SƯU TẬP MÙA HÈ 2022</h2>
+                    <p class="slider-home__item--info__caption">VMMS đã cho ra mắt bộ sư tập thời trang mới nhất dành cho phái nữ trong mùa hè 2022 này. Với phối màu sáng làm chủ đạo, bộ sưu tập giúp các quý cô thể hiện cá tính thời trang độc đáo, đầy năng động của mình</p>
+                    <a href="!#" class="btn btn-primary view-all">Xem tất cả<img src="./images/arrow.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="slider-home__item image-cover">
+                <img src="./images/banner.jpg" class="main-image" alt=""/>
+                <div class="slider-home__item--info text-center">
+                    <p class="main-title">30% OFF</p>
+                    <h2 class="slider-home__item--info__title">BỘ SƯU TẬP MÙA HÈ 2022</h2>
+                    <p class="slider-home__item--info__caption">VMMS đã cho ra mắt bộ sư tập thời trang mới nhất dành cho phái nữ trong mùa hè 2022 này. Với phối màu sáng làm chủ đạo, bộ sưu tập giúp các quý cô thể hiện cá tính thời trang độc đáo, đầy năng động của mình</p>
+                    <a href="!#" class="btn btn-primary view-all">Xem tất cả<img src="./images/arrow.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="slider-home__item image-cover">
+                <img src="./images/banner.jpg" class="main-image" alt=""/>
+                <div class="slider-home__item--info text-center">
+                    <p class="main-title">30% OFF</p>
+                    <h2 class="slider-home__item--info__title">BỘ SƯU TẬP MÙA HÈ 2022</h2>
+                    <p class="slider-home__item--info__caption">VMMS đã cho ra mắt bộ sư tập thời trang mới nhất dành cho phái nữ trong mùa hè 2022 này. Với phối màu sáng làm chủ đạo, bộ sưu tập giúp các quý cô thể hiện cá tính thời trang độc đáo, đầy năng động của mình</p>
+                    <a href="!#" class="btn btn-primary view-all">Xem tất cả<img src="./images/arrow.svg" alt=""></a>
+                </div>
+            </div>
+        </section>
+        <section class="flash-sale">
+            <div class="container">
+                <div class="row">
+                    <div class="flash-sale-title col-sm-12">
+                        <span class="main-title">FLASH SALE</span>
+                        <div class="countdowm">
+                            <span class="countdowm__hours">00</span>
+                            <span class="countdowm__minutes">00</span>
+                            <span class="countdowm__seconds">00</span>
+                        </div>
+                    </div>
+                    <div class="product-lists owl-carousel owl-theme col-sm-12">
+                        <div class="box-product">
+                            <div class="box-product-media">
+                                <div class="box-product-media__image image-cover">
+                                    <img src="./images/sp-1.jpg" class="main-image" alt="Áo polo phối màu">
+                                </div>
+                            </div>
+                            <div class="box-product-sale-off">
+                                <span class="box-product-sale-off__number">
+                                    50%
+                                </span>
+                                <span class="box-product-sale-off__text">
+                                    GIẢM
+                                </span>
+                            </div>
+                            <h4 class="box-product__name">
+                                <a href="#!">Áo polo phối màu</a>
+                            </h4>
+                            <div class="box-product-price">
+                                <span class="box-product-price__current">
+                                    179.000₫
+                                </span>
+                            </div>
+                            <div class="box-product-color">
+                                <span class="box-product-color__item box-product-color__item--red"></span>
+                                <span class="box-product-color__item box-product-color__item--black"></span>
+                                <span class="box-product-color__item box-product-color__item--yellow is-select"></span>
+                            </div>
+                        </div>
+                        <div class="box-product">
+                            <div class="box-product-media">
+                                <div class="box-product-media__image image-cover">
+                                    <img src="./images/sp-2.jpg" class="main-image" alt="Áo sơ mi nữ dài tay">
+                                </div>
+                            </div>
+                            <div class="box-product-sale-off">
+                            <span class="box-product-sale-off__number">
+                                10%
+                            </span>
+                            <span class="box-product-sale-off__text">GIẢM</span>
+                            </div>
+                            <h4 class="box-product__name">
+                                <a href="#">Áo Hoodie nam tay ngắn</a>
+                            </h4>
+                            <div class="box-product-price">
+                                <span class="box-product-price__current">
+                                    239.000 ₫
+                                </span>
+                            </div>
+                            <div class="box-product-color">
+                                <span class="box-product-color__item box-product-color__item--blue"></span>
+                                <span class="box-product-color__item box-product-color__item--pink"></span>
+                                <span class="box-product-color__item box-product-color__item--red"></span>
+                                <span class="box-product-color__item box-product-color__item--black"></span>
+                                <span class="box-product-color__item box-product-color__item--gray is-select"></span>
+                            </div>
+                        </div>
+                        <div class="box-product">
+                            <div class="box-product-media">
+                                <div class="box-product-media__image image-cover">
+                                    <img src="./images/sp-3.jpg" class="main-image" alt="Áo Hoodie nam tay ngắn">
+                                </div>
+                            </div>
+                            <div class="box-product-sale-off">
+                                <span class="box-product-sale-off__number">10%</span>
+                                <span class="box-product-sale-off__text">GIẢM</span>
+                            </div>
+                            <h4 class="box-product__name">
+                                <a href="#">Áo Hoodie nam tay ngắn</a>
+                            </h4>
+                            <div class="box-product-price">
+                                <span class="box-product-price__current">
+                                    280.000 ₫
+                                </span>
+                            </div>
+                            <div class="box-product-color">
+                                <span class="box-product-color__item box-product-color__item--black"></span>
+                                <span class="box-product-color__item box-product-color__item--red is-select"></span>
+                            </div>
+                        </div>
+                        <div class="box-product">
+                            <div class="box-product-media">
+                                <div class="box-product-media__image image-cover">
+                                    <img src="./images/sp-4.jpg" class="main-image" alt="Áo len dài tay nữ">
+                                </div>
+                            </div>
+                            <div class="box-product-sale-off">
+                                <span class="box-product-sale-off__number">10%</span>
+                                <span class="box-product-sale-off__text">GIẢM</span>
+                            </div>
+                            <h4 class="box-product__name">
+                                <a href="#">Áo len dài tay nữ</a>
+                            </h4>
+                            <div class="box-product-price">
+                                <span class="box-product-price__current">
+                                    179.000 ₫
+                                </span>
+                            </div>
+                            <div class="box-product-color">
+                                <span class="box-product-color__item box-product-color__item--black"></span>
+                                <span class="box-product-color__item box-product-color__item--red is-select"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="!#" class="btn btn-primary view-all">Xem tất cả<img src="./images/arrow.svg"></a>
+                </div>
+            </div>
+        </section>
+        <section class="product-new">
+            <div class="container">
+                <div class="row">
+                    <div class="product-new-title text-center col-sm-12">
+                        <h2 class="product-new-title__header">TRENDING</h2>
+                        <p class="product-new-title__caption">Những mẫu thời trang nổi bật nhất của chúng tôi</p>
+                    </div>
+                    <div class="product-lists owl-carousel owl-theme col-sm-12">
+                        <div class="box-product">
+                            <div class="box-product-media">
+                                <div class="box-product-media__image image-cover">
+                                    <img src="./images/sp-trending-1.png" class="main-image" alt="Áo Hoodie nam tay ngắn phong cách Hip Hop">
+                                </div>
+                                <div class="box-product-media__tooltip pd-26">
+<!--                                    Đang tìm phương án hợp lý cho nút chọn size-->
+                                    <div class="btn btn-primary add-size view-all trending-btn mgr-1">Chọn size<img src="./images/arrow.svg" alt=""></div>
+                                    <div class="btn btn-primary add-to-cart view-all trending-btn">Thêm vào giỏ<img src="./images/arrow.svg" alt=""></div>
+                                </div>
+                            </div>
+                            <h4 class="box-product__name">
+                                <a href="#!">Áo Hoodie nam tay ngắn phong cách Hip Hop</a>
+                            </h4>
+                            <div class="box-product-price">
+                                  <span class="box-product-price__current">
+                                    179.000₫
+                                  </span>
+                            </div>
+                            <div class="box-product-color">
+                                <span class="box-product-color__item box-product-color__item--redBordeaux is-select"></span>
+                                <span class="box-product-color__item box-product-color__item--white"></span>
+                                <span class="box-product-color__item box-product-color__item--red"></span>
+                                <span class="box-product-color__item box-product-color__item--yellow"></span>
+                                <span class="box-product-color__item box-product-color__item--green"></span>
+                            </div>
+                        </div>
+                        <div class="box-product">
+                            <div class="box-product-media">
+                                <div class="box-product-media__image image-cover">
+                                    <img src="./images/sp-trending-2.png" class="main-image" alt="Áo dệt tay cổ tròn mẫu Hàn Quốc">
+                                </div>
+                                <div class="box-product-media__tooltip pd-26">
+                                    <div class="btn btn-primary selected-size view-all trending-btn mgr-1">Size M</div>
+                                    <div class="btn btn-primary add-to-cart view-all trending-btn">Thêm vào giỏ<img src="./images/arrow.svg" alt=""></div>
+                                </div>
+                            </div>
+                            <h4 class="box-product__name">
+                                <a href="#">Áo dệt tay cổ tròn mẫu Hàn Quốc</a>
+                            </h4>
+                            <div class="box-product-price">
+                                  <span class="box-product-price__current">
+                                    239.000 ₫
+                                  </span>
+                            </div>
+                            <div class="box-product-color">
+                                <span class="box-product-color__item box-product-color__item--green"></span>
+                                <span class="box-product-color__item box-product-color__item--white"></span>
+                                <span class="box-product-color__item box-product-color__item--black is-select"></span>
+                                <span class="box-product-color__item box-product-color__item--yellow"></span>
+                                <span class="box-product-color__item box-product-color__item--slightPink"></span>
+                            </div>
+                        </div>
+                        <div class="box-product">
+                            <div class="box-product-media">
+                                <div class="box-product-media__image image-cover">
+                                    <img src="./images/sp-trending-3.png" class="main-image" alt="Áo polo phối màu">
+                                </div>
+                            </div>
+                            <h4 class="box-product__name">
+                                <a href="#">Áo polo phối màu</a>
+                            </h4>
+                            <div class="box-product-price">
+                                  <span class="box-product-price__current">
+                                    280.000 ₫
+                                  </span>
+                            </div>
+                            <div class="box-product-color">
+                                <span class="box-product-color__item box-product-color__item--blue"></span>
+                                <span class="box-product-color__item box-product-color__item--pink"></span>
+                                <span class="box-product-color__item box-product-color__item--red"></span>
+                                <span class="box-product-color__item box-product-color__item--black"></span>
+                                <span class="box-product-color__item box-product-color__item--yellow is-select"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="banner-sale">
+            <img src="./images/banner-sale.png">
+            <div class="banner-sale__title">50% OFF</div>
+        </section>
+        <section class="sale-off">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="product-lists">
+                            <div class="box-product-first">
+                                <div class="box-product-first-text">
+                                    <div class="box-product-first__name">
+                                        <a href="#!">THỜI TRANG NAM</a>
+                                    </div>
+                                     <div class="box-product-first__caption">
+                                         <p>Những bộ sưu tập thời trang lịch lãm, trẻ trung, nam tính và đầy sang trọng.</p>
+                                    </div>
+                                    <div class="btn btn-primary view-all">Mua ngay<img src="./images/arrow.svg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="box-product">
+                                <div class="box-product__image">
+                                    <img src="./images/thoi-trang-nam-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="box-product">
+                                <div class="box-product__image">
+                                    <img src="./images/thoi-trang-nam-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-lists">
+                            <div class="box-product">
+                                <div class="box-product__image">
+                                    <img src="./images/thoi-trang-nu-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="box-product">
+                                <div class="box-product__image">
+                                    <img src="./images/thoi-trang-nu-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="box-product-second">
+                                <div class="box-product-second-text">
+                                    <div class="box-product-second__name">
+                                        <a href="#!">THỜI TRANG NỮ</a>
+                                    </div>
+                                    <div class="box-product-second__caption">
+                                        <p>Phong cách hiện đại, nữ tính với chất liệu cao cấp, thân thiện môi trường</p>
+                                    </div>
+                                    <div class="btn btn-primary view-all">Mua ngay<img src="./images/arrow.svg" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-lists">
+                            <div class="box-product-first">
+                                <div class="box-product-first-text">
+                                    <div class="box-product-first__name">
+                                        <a href="#!">PHỤ KIỆN</a>
+                                    </div>
+                                    <div class="box-product-first__caption">
+                                        <p>Những bộ sưu tập thời trang lịch lãm, trẻ trung, nam tính và đầy sang trọng.</p>
+                                    </div>
+                                    <div class="btn btn-primary view-all">Mua ngay<img src="./images/arrow.svg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="box-product">
+                                <div class="box-product__image">
+                                    <img src="./images/phu-kien-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="box-product">
+                                <div class="box-product__image">
+                                    <img src="./images/phu-kien-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="customer-brand">
+            <div class="container">
+                <div class="row">
+                    <div class="customer-brand-title text-center col-sm-12">
+                        <h3 class="customer-brand-title__header">THƯƠNG HIỆU HÀNG ĐẦU</h3>
+                        <p class="customer-brand-title__caption">Những thương hiệu thời trang nổi tiếng hợp tác với chúng tôi</p>
+                    </div>
+                    <div class="customer-brand-list owl-carousel owl-theme col-sm-12">
+                        <div class="customer-brand-item">
+                            <div class="customer-brand-item__image image-cover">
+                                <img src="./images/chanel.png" class="main-image" alt="">
+                            </div>
+                            <div class="customer-brand-item__name">
+                                CHANEL
+                            </div>
+                        </div>
+                        <div class="customer-brand-item">
+                            <div class="customer-brand-item__image image-cover">
+                                <img src="./images/gucci.png" class="main-image" alt="">
+                            </div>
+                            <div class="customer-brand-item__name">
+                                GUCCI
+                            </div>
+                        </div>
+                        <div class="customer-brand-item ">
+                            <div class="customer-brand-item__image image-cover">
+                                <img src="./images/herms.png" class="main-image" alt="">
+                            </div>
+                            <div class="customer-brand-item__name">
+                                HERMES
+                            </div>
+                        </div>
+                        <div class="customer-brand-item ">
+                            <div class="customer-brand-item__image image-cover">
+                                <img src="./images/louis.png" class="main-image" alt="">
+                            </div>
+                            <div class="customer-brand-item__name">
+                                LOUIS VUITTON
+                            </div>
+                        </div>
+                        <div class="customer-brand-item ">
+                            <div class="customer-brand-item__image image-cover">
+                                <img src="./images/gucci.png" class="main-image" alt="">
+                            </div>
+                            <div class="customer-brand-item__name">
+                                GUCCI
+                            </div>
+                        </div>
+                        <div class="customer-brand-item ">
+                            <div class="customer-brand-item__image image-cover">
+                                <img src="./images/D&G.png" class="main-image" alt="">
+                            </div>
+                            <div class="customer-brand-item__name">
+                                DOLCE & GABBANA
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="suggest-today">
+            <div class="container">
+                <div class="row">
+                    <div class="suggest-today-title text-center col-sm-12">
+                        <h2 class="suggest-today-title__header">GỢI Ý HÔM NAY</h2>
+                        <p class="suggest-today-title__caption">Chúng tôi gợi ý cho bạn những mẫu thời trang mới nhất</p>
+                    </div>
+                    <nav class="product-category col-sm-12">
+                        <div class="nav nav-tabs product-category__name" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" data-toggle="tab" href="#nav1-1" role="tab" aria-selected="true">Áo thun</a>
+                            <a class="nav-item nav-link" data-toggle="tab" href="#nav1-2" role="tab" aria-selected="false">Áo sơ mi</a>
+                            <a class="nav-item nav-link" data-toggle="tab" href="#nav1-3" role="tab" aria-selected="false">Túi xách</a>
+                            <a class="nav-item nav-link" data-toggle="tab" href="#nav1-4" role="tab" aria-selected="false">Ví cầm tay</a>
+                            <a class="nav-item nav-link" data-toggle="tab" href="#nav1-5" role="tab" aria-selected="false">Khăn choàng</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content col-sm-12" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav1-1" role="tabpanel">
+                            <div class="product-lists">
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-1.png"  class="main-image" alt="Áo thun tay ngắn nữ có hình in">
+                                        </div>
+                                        <div class="box-product-media__tooltip">
+                                            <div class="btn btn-primary add-size view-all">Chọn size<img src="./images/arrow.svg" alt=""></div>
+                                            <div class="btn btn-primary add-to-cart view-all">Thêm vào giỏ<img src="./images/arrow.svg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun tay ngắn nữ có hình in</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            266.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-2.png" class="main-image" alt="Áo thun tay ngắn cổ cao nữ">
+                                        </div>
+                                        <div class="box-product-media__tooltip">
+                                            <div class="btn btn-primary selected-size view-all">Size M</div>
+                                            <div class="btn btn-primary add-to-cart view-all">Thêm vào giỏ<img src="./images/arrow.svg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun tay ngắn cổ cao nữ</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            216.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--gray"></span>
+                                        <span class="box-product-color__item box-product-color__item--black is-select"></span>
+                                    </div>
+                                </div>
+
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-3.png" class="main-image" alt="Áo thun có cúc tay ngắn nam">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun có cúc tay ngắn nam</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            315.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--gray"></span>
+                                        <span class="box-product-color__item box-product-color__item--yellow"></span>
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black is-select"></span>
+                                    </div>
+                                    <div class="box-product-out-of-stock">
+                                        <span class="box-product-out-of-stock__text">
+                                            Tạm hết hàng
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-4.png" class="main-image"  alt="Áo thun trơn ngắn tay nam">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun trơn ngắn tay nam</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            246.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--green"></span>
+                                        <span class="box-product-color__item box-product-color__item--violet"></span>
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--gray is-select"></span>
+                                    </div>
+                                    <div class="box-product-sale-off">
+                                        <span class="box-product-sale-off__number">
+                                            50%
+                                        </span>
+                                        <span class="box-product-sale-off__text">
+                                            GIẢM
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-5.png" class="main-image" alt="Áo dệt kim sát nách cổ cao nữ">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo dệt kim sát nách cổ cao nữ</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            374.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--purple"></span>
+                                        <span class="box-product-color__item box-product-color__item--brown"></span>
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                        <img src="./images/suggets-6.png" class="main-image" alt="Áo dệt kim ngắn tay nữ">
+                                    </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo dệt kim ngắn tay nữ</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            413.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--red"></span>
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--paleBrow is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-7.png" class="main-image" alt="Áo thun tay ngắn nam in overall">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun tay ngắn nam in overall</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            315.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--green"></span>
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--gray is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-8.png" class="main-image" alt="Áo thun tay ngắn có thêu hoa">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun tay ngắn có thêu hoa</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            290.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--black is-select"></span>
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-9.png" class="main-image" alt="Áo thun ngắn tay nữ có diễu cổ">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun ngắn tay nữ có diễu cổ</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            216.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--red"></span>
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--brown is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-10.png" class="main-image" alt="Áo thun ngắn tay nam có thêu hình">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun ngắn tay nữ có thêu hình</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            266.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--white is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-11.png" class="main-image" alt="Áo thun ngắn tay nam có thêu hình">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun ngắn tay nam có thêu hình</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            290.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--white is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-12.png" class="main-image" alt="Áo thun ngắn tay nam basic">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun ngắn tay nam basic</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            275.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--gray is-select"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="!#" class="btn btn-primary view-all">Xem tất cả<img src="./images/arrow.svg"></a>
+                        </div>
+                        <div class="tab-pane fade show" id="nav1-2" role="tabpanel">
+                            <div class="product-lists">
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-1.png"  class="main-image" alt="Áo thun tay ngắn nữ có hình in">
+                                        </div>
+                                        <div class="box-product-media__tooltip">
+                                            <div class="btn btn-primary add-size view-all">Chọn size<img src="./images/arrow.svg" alt=""></div>
+                                            <div class="btn btn-primary add-to-cart view-all">Thêm vào giỏ<img src="./images/arrow.svg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun tay ngắn nữ có hình in</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            266.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-2.png" class="main-image" alt="Áo thun tay ngắn cổ cao nữ">
+                                        </div>
+                                        <div class="box-product-media__tooltip">
+                                            <div class="btn btn-primary selected-size view-all">Size M</div>
+                                            <div class="btn btn-primary add-to-cart view-all">Thêm vào giỏ<img src="./images/arrow.svg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun tay ngắn cổ cao nữ</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            216.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--gray"></span>
+                                        <span class="box-product-color__item box-product-color__item--black is-select"></span>
+                                    </div>
+                                </div>
+
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-3.png" class="main-image" alt="Áo thun có cúc tay ngắn nam">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun có cúc tay ngắn nam</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            315.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--gray"></span>
+                                        <span class="box-product-color__item box-product-color__item--yellow"></span>
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black is-select"></span>
+                                    </div>
+                                    <div class="box-product-out-of-stock">
+                                        <span class="box-product-out-of-stock__text">
+                                            Tạm hết hàng
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-4.png" class="main-image"  alt="Áo thun trơn ngắn tay nam">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun trơn ngắn tay nam</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            246.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--green"></span>
+                                        <span class="box-product-color__item box-product-color__item--violet"></span>
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--gray is-select"></span>
+                                    </div>
+                                    <div class="box-product-sale-off">
+                                        <span class="box-product-sale-off__number">
+                                            50%
+                                        </span>
+                                        <span class="box-product-sale-off__text">
+                                            GIẢM
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-5.png" class="main-image" alt="Áo dệt kim sát nách cổ cao nữ">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo dệt kim sát nách cổ cao nữ</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            374.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--purple"></span>
+                                        <span class="box-product-color__item box-product-color__item--brown"></span>
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-6.png" class="main-image" alt="Áo dệt kim ngắn tay nữ">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo dệt kim ngắn tay nữ</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            413.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--red"></span>
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--paleBrow is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-7.png" class="main-image" alt="Áo thun tay ngắn nam in overall">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun tay ngắn nam in overall</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            315.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--green"></span>
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--gray is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-8.png" class="main-image" alt="Áo thun tay ngắn có thêu hoa">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun tay ngắn có thêu hoa</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            290.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--black is-select"></span>
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-9.png" class="main-image" alt="Áo thun ngắn tay nữ có diễu cổ">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun ngắn tay nữ có diễu cổ</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            216.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--red"></span>
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--brown is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-10.png" class="main-image" alt="Áo thun ngắn tay nam có thêu hình">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun ngắn tay nữ có thêu hình</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            266.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--white is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-11.png" class="main-image" alt="Áo thun ngắn tay nam có thêu hình">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun ngắn tay nam có thêu hình</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            290.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--white is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-12.png" class="main-image" alt="Áo thun ngắn tay nam basic">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun ngắn tay nam basic</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            275.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--gray is-select"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="!#" class="btn btn-primary view-all">Xem tất cả<img src="./images/arrow.svg"></a>
+                        </div>
+                        <div class="tab-pane fade show" id="nav1-3" role="tabpanel">
+                            <div class="product-lists">
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-1.png"  class="main-image" alt="Áo thun tay ngắn nữ có hình in">
+                                        </div>
+                                        <div class="box-product-media__tooltip">
+                                            <div class="btn btn-primary add-size view-all">Chọn size<img src="./images/arrow.svg" alt=""></div>
+                                            <div class="btn btn-primary add-to-cart view-all">Thêm vào giỏ<img src="./images/arrow.svg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun tay ngắn nữ có hình in</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            266.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-2.png" class="main-image" alt="Áo thun tay ngắn cổ cao nữ">
+                                        </div>
+                                        <div class="box-product-media__tooltip">
+                                            <div class="btn btn-primary selected-size view-all">Size M</div>
+                                            <div class="btn btn-primary add-to-cart view-all">Thêm vào giỏ<img src="./images/arrow.svg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun tay ngắn cổ cao nữ</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            216.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--gray"></span>
+                                        <span class="box-product-color__item box-product-color__item--black is-select"></span>
+                                    </div>
+                                </div>
+
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-3.png" class="main-image" alt="Áo thun có cúc tay ngắn nam">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun có cúc tay ngắn nam</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            315.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--gray"></span>
+                                        <span class="box-product-color__item box-product-color__item--yellow"></span>
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black is-select"></span>
+                                    </div>
+                                    <div class="box-product-out-of-stock">
+                                        <span class="box-product-out-of-stock__text">
+                                            Tạm hết hàng
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-4.png" class="main-image"  alt="Áo thun trơn ngắn tay nam">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun trơn ngắn tay nam</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            246.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--green"></span>
+                                        <span class="box-product-color__item box-product-color__item--violet"></span>
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--gray is-select"></span>
+                                    </div>
+                                    <div class="box-product-sale-off">
+                                        <span class="box-product-sale-off__number">
+                                            50%
+                                        </span>
+                                        <span class="box-product-sale-off__text">
+                                            GIẢM
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-5.png" class="main-image" alt="Áo dệt kim sát nách cổ cao nữ">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo dệt kim sát nách cổ cao nữ</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            374.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--purple"></span>
+                                        <span class="box-product-color__item box-product-color__item--brown"></span>
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-6.png" class="main-image" alt="Áo dệt kim ngắn tay nữ">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo dệt kim ngắn tay nữ</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            413.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--red"></span>
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--paleBrow is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-7.png" class="main-image" alt="Áo thun tay ngắn nam in overall">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun tay ngắn nam in overall</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            315.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--green"></span>
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--gray is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-8.png" class="main-image" alt="Áo thun tay ngắn có thêu hoa">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun tay ngắn có thêu hoa</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            290.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--black is-select"></span>
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-9.png" class="main-image" alt="Áo thun ngắn tay nữ có diễu cổ">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun ngắn tay nữ có diễu cổ</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            216.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--red"></span>
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--brown is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-10.png" class="main-image" alt="Áo thun ngắn tay nam có thêu hình">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun ngắn tay nữ có thêu hình</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            266.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--white is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-11.png" class="main-image" alt="Áo thun ngắn tay nam có thêu hình">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun ngắn tay nam có thêu hình</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            290.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--white is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-12.png" class="main-image" alt="Áo thun ngắn tay nam basic">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun ngắn tay nam basic</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            275.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--gray is-select"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="!#" class="btn btn-primary view-all">Xem tất cả<img src="./images/arrow.svg"></a>
+                        </div>
+                        <div class="tab-pane fade show" id="nav1-4" role="tabpanel">
+                            <div class="product-lists">
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-1.png"  class="main-image" alt="Áo thun tay ngắn nữ có hình in">
+                                        </div>
+                                        <div class="box-product-media__tooltip">
+                                            <div class="btn btn-primary add-size view-all">Chọn size<img src="./images/arrow.svg" alt=""></div>
+                                            <div class="btn btn-primary add-to-cart view-all">Thêm vào giỏ<img src="./images/arrow.svg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun tay ngắn nữ có hình in</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            266.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-2.png" class="main-image" alt="Áo thun tay ngắn cổ cao nữ">
+                                        </div>
+                                        <div class="box-product-media__tooltip">
+                                            <div class="btn btn-primary selected-size view-all">Size M</div>
+                                            <div class="btn btn-primary add-to-cart view-all">Thêm vào giỏ<img src="./images/arrow.svg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun tay ngắn cổ cao nữ</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            216.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--gray"></span>
+                                        <span class="box-product-color__item box-product-color__item--black is-select"></span>
+                                    </div>
+                                </div>
+
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-3.png" class="main-image" alt="Áo thun có cúc tay ngắn nam">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun có cúc tay ngắn nam</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            315.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--gray"></span>
+                                        <span class="box-product-color__item box-product-color__item--yellow"></span>
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black is-select"></span>
+                                    </div>
+                                    <div class="box-product-out-of-stock">
+                                        <span class="box-product-out-of-stock__text">
+                                            Tạm hết hàng
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-4.png" class="main-image"  alt="Áo thun trơn ngắn tay nam">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun trơn ngắn tay nam</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            246.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--green"></span>
+                                        <span class="box-product-color__item box-product-color__item--violet"></span>
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--gray is-select"></span>
+                                    </div>
+                                    <div class="box-product-sale-off">
+                                        <span class="box-product-sale-off__number">
+                                            50%
+                                        </span>
+                                        <span class="box-product-sale-off__text">
+                                            GIẢM
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-5.png" class="main-image" alt="Áo dệt kim sát nách cổ cao nữ">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo dệt kim sát nách cổ cao nữ</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            374.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--purple"></span>
+                                        <span class="box-product-color__item box-product-color__item--brown"></span>
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-6.png" class="main-image" alt="Áo dệt kim ngắn tay nữ">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo dệt kim ngắn tay nữ</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            413.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--red"></span>
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--paleBrow is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-7.png" class="main-image" alt="Áo thun tay ngắn nam in overall">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun tay ngắn nam in overall</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            315.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--green"></span>
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--gray is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-8.png" class="main-image" alt="Áo thun tay ngắn có thêu hoa">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun tay ngắn có thêu hoa</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            290.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--black is-select"></span>
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-9.png" class="main-image" alt="Áo thun ngắn tay nữ có diễu cổ">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun ngắn tay nữ có diễu cổ</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            216.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--red"></span>
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--brown is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-10.png" class="main-image" alt="Áo thun ngắn tay nam có thêu hình">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun ngắn tay nữ có thêu hình</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            266.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--white is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-11.png" class="main-image" alt="Áo thun ngắn tay nam có thêu hình">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun ngắn tay nam có thêu hình</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            290.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--white is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-12.png" class="main-image" alt="Áo thun ngắn tay nam basic">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun ngắn tay nam basic</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            275.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--gray is-select"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="!#" class="btn btn-primary view-all">Xem tất cả<img src="./images/arrow.svg"></a>
+                        </div>
+                        <div class="tab-pane fade show" id="nav1-5" role="tabpanel">
+                            <div class="product-lists">
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-1.png"  class="main-image" alt="Áo thun tay ngắn nữ có hình in">
+                                        </div>
+                                        <div class="box-product-media__tooltip">
+                                            <div class="btn btn-primary add-size view-all">Chọn size<img src="./images/arrow.svg" alt=""></div>
+                                            <div class="btn btn-primary add-to-cart view-all">Thêm vào giỏ<img src="./images/arrow.svg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun tay ngắn nữ có hình in</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            266.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-2.png" class="main-image" alt="Áo thun tay ngắn cổ cao nữ">
+                                        </div>
+                                        <div class="box-product-media__tooltip">
+                                            <div class="btn btn-primary selected-size view-all">Size M</div>
+                                            <div class="btn btn-primary add-to-cart view-all">Thêm vào giỏ<img src="./images/arrow.svg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun tay ngắn cổ cao nữ</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            216.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--gray"></span>
+                                        <span class="box-product-color__item box-product-color__item--black is-select"></span>
+                                    </div>
+                                </div>
+
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-3.png" class="main-image" alt="Áo thun có cúc tay ngắn nam">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun có cúc tay ngắn nam</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            315.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--gray"></span>
+                                        <span class="box-product-color__item box-product-color__item--yellow"></span>
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black is-select"></span>
+                                    </div>
+                                    <div class="box-product-out-of-stock">
+                                        <span class="box-product-out-of-stock__text">
+                                            Tạm hết hàng
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-4.png" class="main-image"  alt="Áo thun trơn ngắn tay nam">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun trơn ngắn tay nam</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            246.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--green"></span>
+                                        <span class="box-product-color__item box-product-color__item--violet"></span>
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--gray is-select"></span>
+                                    </div>
+                                    <div class="box-product-sale-off">
+                                        <span class="box-product-sale-off__number">
+                                            50%
+                                        </span>
+                                        <span class="box-product-sale-off__text">
+                                            GIẢM
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-5.png" class="main-image" alt="Áo dệt kim sát nách cổ cao nữ">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo dệt kim sát nách cổ cao nữ</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            374.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--purple"></span>
+                                        <span class="box-product-color__item box-product-color__item--brown"></span>
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-6.png" class="main-image" alt="Áo dệt kim ngắn tay nữ">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo dệt kim ngắn tay nữ</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            413.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--red"></span>
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--paleBrow is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-7.png" class="main-image" alt="Áo thun tay ngắn nam in overall">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun tay ngắn nam in overall</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            315.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--green"></span>
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--gray is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-8.png" class="main-image" alt="Áo thun tay ngắn có thêu hoa">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun tay ngắn có thêu hoa</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            290.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--black is-select"></span>
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-9.png" class="main-image" alt="Áo thun ngắn tay nữ có diễu cổ">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun ngắn tay nữ có diễu cổ</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            216.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--red"></span>
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--brown is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-10.png" class="main-image" alt="Áo thun ngắn tay nam có thêu hình">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun ngắn tay nữ có thêu hình</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            266.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--white is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-11.png" class="main-image" alt="Áo thun ngắn tay nam có thêu hình">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun ngắn tay nam có thêu hình</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            290.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--white is-select"></span>
+                                    </div>
+                                </div>
+                                <div class="box-product">
+                                    <div class="box-product-media">
+                                        <div class="box-product-media__image image-cover">
+                                            <img src="./images/suggets-12.png" class="main-image" alt="Áo thun ngắn tay nam basic">
+                                        </div>
+                                    </div>
+                                    <h4 class="box-product__name">
+                                        <a href="#!">Áo thun ngắn tay nam basic</a>
+                                    </h4>
+                                    <div class="box-product-price">
+                                        <span class="box-product-price__current">
+                                            275.000₫
+                                        </span>
+                                    </div>
+                                    <div class="box-product-color">
+                                        <span class="box-product-color__item box-product-color__item--white"></span>
+                                        <span class="box-product-color__item box-product-color__item--black"></span>
+                                        <span class="box-product-color__item box-product-color__item--gray is-select"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="!#" class="btn btn-primary view-all">Xem tất cả<img src="./images/arrow.svg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="customer-review">
+            <div class="container">
+                <div class="row">
+                    <div class="customer-review-title text-center col-sm-12">
+                        KHÁCH HÀNG HỌ NÓI GÌ VỀ CHÚNG TÔI?
+                    </div>
+                    <div class="customer-review-list owl-carousel owl-theme col-sm-12">
+                        <div class="review-item">
+                            <div class="review-item__avatar">
+                                <img src="./images/avatar-customer.png" alt="SIMONE PAROTTI">
+                            </div>
+                            <div class="review-item__content">
+                                "Thời trang VMMS mang sự sáng tạo rất lớn trong các mốt thời trang gần đây. Không chỉ nói đến chất
+                                liệu cao cấp, thân thiện với môi trường mà còn là sự tinh tế trong các đường nét trên trang phục."
+                            </div>
+                            <div class="review-item__name">
+                                SIMONE PAROTTI
+                            </div>
+                        </div>
+                        <div class="review-item">
+                            <div class="review-item__avatar">
+                                <img src="./images/avatar-customer.png" alt="SIMONE PAROTTI">
+                            </div>
+                            <div class="review-item__content">
+                                "Thời trang VMMS mang sự sáng tạo rất lớn trong các mốt thời trang gần đây. Không chỉ nói đến chất
+                                liệu cao cấp, thân thiện với môi trường mà còn là sự tinh tế trong các đường nét trên trang phục."
+                            </div>
+                            <div class="review-item__name">
+                                SIMONE PAROTTI
+                            </div>
+                        </div>
+                        <div class="review-item">
+                            <div class="review-item__avatar">
+                                <img src="./images/avatar-customer.png" alt="SIMONE PAROTTI">
+                            </div>
+                            <div class="review-item__content">
+                                "Thời trang VMMS mang sự sáng tạo rất lớn trong các mốt thời trang gần đây. Không chỉ nói đến chất
+                                liệu cao cấp, thân thiện với môi trường mà còn là sự tinh tế trong các đường nét trên trang phục."
+                            </div>
+                            <div class="review-item__name">
+                                SIMONE PAROTTI
+                            </div>
+                        </div>
+                        <div class="review-item">
+                            <div class="review-item__avatar">
+                                <img src="./images/avatar-customer.png" alt="SIMONE PAROTTI">
+                            </div>
+                            <div class="review-item__content">
+                                "Thời trang VMMS mang sự sáng tạo rất lớn trong các mốt thời trang gần đây. Không chỉ nói đến chất
+                                liệu cao cấp, thân thiện với môi trường mà còn là sự tinh tế trong các đường nét trên trang phục."
+                            </div>
+                            <div class="review-item__name">
+                                SIMONE PAROTTI
+                            </div>
+                        </div>
+                        <div class="review-item">
+                            <div class="review-item__avatar">
+                                <img src="./images/avatar-customer.png" alt="SIMONE PAROTTI">
+                            </div>
+                            <div class="review-item__content">
+                                "Thời trang VMMS mang sự sáng tạo rất lớn trong các mốt thời trang gần đây. Không chỉ nói đến chất
+                                liệu cao cấp, thân thiện với môi trường mà còn là sự tinh tế trong các đường nét trên trang phục."
+                            </div>
+                            <div class="review-item__name">
+                                SIMONE PAROTTI
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news-fashion">
+            <div class="container">
+                <div class="row">
+                    <div class="news-fashion-title text-center col-sm-12">
+                        <h3 class="news-fashion-title__header">BLOG</h3>
+                        <p class="news-fashion-title__caption">Những tin tức mới nhất về thời trang VMMS</p>
+                    </div>
+                    <div class="news-fashion-list owl-carousel owl-theme col-sm-12">
+                        <div class="box-blog-post">
+                            <div class="box-blog-post__image image-cover">
+                                <img src="./images/new-1.png" class="main-image" alt="Thiết kế đỉnh cao căn hộ 22m2 khiến ai cũng ngưỡng mộ">
+                            </div>
+                            <h5 class="box-blog-post__title">
+                                Bí quyết lên đồ tôn làn da nâu
+                            </h5>
+                            <div class="box-blog-post-date">
+                                <span class="box-blog-post-date__day">
+                                    28
+                                </span>
+                                <span class="box-blog-post-date__month">
+                                    05
+                                </span>
+                            </div>
+                        </div>
+                        <div class="box-blog-post">
+                            <div class="box-blog-post__image image-cover">
+                                <img src="./images/new-2.png" class="main-image" alt="Những lưu ý khi thiết kế nội thất phòng ngủ trẻ em">
+                            </div>
+                            <h5 class="box-blog-post__title">
+                                Gợi ý set đồ đi biển hè này
+                            </h5>
+                            <div class="box-blog-post-date">
+                                <span class="box-blog-post-date__day">
+                                    28
+                                </span>
+                                <span class="box-blog-post-date__month">
+                                    05
+                                </span>
+                            </div>
+                        </div>
+                        <div class="box-blog-post">
+                            <div class="box-blog-post__image image-cover">
+                                <img src="./images/new-3.png" class="main-image" alt="10 xu hướng thiết kế nội thất phổ biến đầu năm 2022">
+                            </div>
+                            <h5 class="box-blog-post__title">
+                                Phong cách công sở sang trọng
+                            </h5>
+                            <div class="box-blog-post-date">
+                                <span class="box-blog-post-date__day">
+                                    28
+                                </span>
+                                <span class="box-blog-post-date__month">
+                                    05
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer--top">
+            <div class="container">
+                <div class="row policy-list">
+                    <div class="policy-item col-lg-3 col-md-6 col-sm-12">
+                        <div class="policy-item-icon">
+                            <img src="./images/icon-shiping.svg" alt="Miễn phí giao hàng">
+                        </div>
+                        <div class="policy-item-content">
+                            <div class="policy-item-content__title">
+                                Miễn phí giao hàng
+                            </div>
+                            <div class="policy-item-content__info">
+                                Áp dụng cho đơn hàng trên 2.000.000 VNĐ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="policy-item col-lg-3 col-md-6 col-sm-12">
+                        <div class="policy-item-icon">
+                            <img src="./images/icon-price.svg" alt="Hỗ trợ đổi trả hàng">
+                        </div>
+                        <div class="policy-item-content">
+                            <div class="policy-item-content__title">
+                                Hỗ trợ đổi trả hàng
+                            </div>
+                            <div class="policy-item-content__info">
+                                Trong vòng 30 ngày
+                            </div>
+                        </div>
+                    </div>
+                    <div class="policy-item col-lg-3 col-md-6 col-sm-12">
+                        <div class="policy-item-icon">
+                            <img src="./images/customer-vip.svg" alt="Khách hàng VIP">
+                        </div>
+                        <div class="policy-item-content">
+                            <div class="policy-item-content__title">
+                                Khách hàng VIP
+                            </div>
+                            <div class="policy-item-content__info">
+                                Nhận ưu đãi lớn khi đăng ký thành viên
+                            </div>
+                        </div>
+                    </div>
+                    <div class="policy-item col-lg-3 col-md-6 col-sm-12">
+                        <div class="policy-item-icon">
+                            <img src="./images/icon-chat.svg" alt="Tư vấn hỗ trợ">
+                        </div>
+                        <div class="policy-item-content">
+                            <div class="policy-item-content__title">
+                                Hotline phản ánh
+                            </div>
+                            <div class="policy-item-content__info">
+                                Phản hồi về dịch vụ của VMMS:
+                                0962.180.180
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container footer--bottom">
+            <div class="row">
+                <div class="footer-col footer-col-1 col">
+                    <div class="footer-col-title">ĐĂNG KÝ BẢN TIN VMMS</div>
+                    <div class="footer-col-content">
+                        <p>Đăng ký bản tin của VMMS để nhận thông tin về những mẫu sản phẩm nội thất mới nhất.</p>
+                        <form action="" class="footer-form">
+                            <input type="email" name="" class="footer-form__input"
+                                   placeholder="Nhập từ khoá tìm kiếm...">
+                            <button type="submit" class="footer-form__button">Gửi</button>
+                        </form>
+                    </div>
+                    <div class="social-network">
+                        <div class="social-network__title">
+                            THEO DÕI CHÚNG TÔI
+                        </div>
+                        <ul class="social-network__list">
+                            <li>
+                                <a href="https://www.facebook.com/" rel="nofollow" target="_blank"><img
+                                        src="./images/icon-face.svg"
+                                        alt="facebook"></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" rel="nofollow" target="_blank"><img
+                                        src="./images/icon-instagram.svg"
+                                        alt="instagram"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/" rel="nofollow" target="_blank"><img
+                                        src="./images/icon-twitter.svg"
+                                        alt="twitter"></a>
+                            </li>
+                            <li>
+                                <a href="https://mail.google.com/" rel="nofollow" target="_blank"><img
+                                        src="./images/icon-gg.svg"
+                                        alt="Gmail"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-copyright">COPYRIGHT © 2022 VMMS</div>
+                </div>
+                <div class="footer-col footer-col-2 col">
+                    <div class="footer-col-title">LIÊN KẾT NHANH</div>
+                    <div class="footer-col-content">
+                        <ul class="menu-footer">
+                            <li class="menu-footer__link">
+                                <a href="#!">Trang chủ</a>
+                            </li>
+                            <li class="menu-footer__link">
+                                <a href="#!">Giới thiệu</a>
+                            </li>
+                            <li class="menu-footer__link">
+                                <a href="#!">Sản phẩm</a>
+                            </li>
+                            <li class="menu-footer__link">
+                                <a href="#!">Tin tức</a>
+                            </li>
+                            <li class="menu-footer__link">
+                                <a href="#!">Khuyến mãi</a>
+                            </li>
+                            <li class="menu-footer__link">
+                                <a href="#!">Hướng dẫn mua hàng</a>
+                            </li>
+                            <li class="menu-footer__link">
+                                <a href="#!">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-col footer-col-3 col">
+                    <div class="footer-col-title">CHÍNH SÁCH</div>
+                    <div class="footer-col-content">
+                        <ul class="menu-footer">
+                            <li class="menu-footer__link">
+                                <a href="#!">Chính sách bảo mật</a>
+                            </li>
+                            <li class="menu-footer__link">
+                                <a href="#!">Chính sách bảo hành</a>
+                            </li>
+                            <li class="menu-footer__link">
+                                <a href="#!">Chính sách đổi trả</a>
+                            </li>
+                            <li class="menu-footer__link">
+                                <a href="#!">Chính sách thanh toán</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-col footer-col-4 col">
+                    <div class="footer-col-content footer-info">
+                        <a href="!#" class="footer-logo"><img src="./images/logo-vmms.png" alt="Logo"></a>
+                        <p>VMMS chuyên cung cấp các sản phẩm nội thất chính hãng đến từ các thương hiệu nổi tiếng trên
+                            thế giới.
+                        </p>
+                        <p class="footer-info__address">Tầng 3 số 14 Pháo Đài Láng, Đống Đa, Hà Nội</p>
+                        <p class="footer-info__phone">0962.180.180</p>
+                        <p class="footer-info__email">info@vmms.vn</p>
+                        <a href="!#" target="_blank" class="footer-bct"><img src="./images/thongbaobocongthuong.png"
+                                                                             alt="Thông báo bộ công thương"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="mobile-sidebar d-lg-none">
+        <div class="mobile-sidebar--top">
+            <a href="!#" class="mobile-sidebar-logo"><img src="./images/logo-vmms.png" alt="Logo"></a>
+            <i class="mobile-sidebar-close"></i>
+        </div>
+        <div class="mobile-sidebar--bottom">
+            <ul class="menu">
+                <li class="menu-item active">
+                    <a href="#!" class="menu-link">Trang chủ</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#!" class="menu-link">Giới thiệu</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#!" class="menu-link">Sản phẩm</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#!" class="menu-link">Tin tức</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#!" class="menu-link">Khuyến mãi</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#!" class="menu-link">Hướng dẫn mua hàng</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#!" class="menu-link">Liên Hệ</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#!" class="menu-link">Đăng ký</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#!" class="menu-link">Đăng nhập</a>
+                </li>
+                <li class="menu-item menu-item-has-child menu-item-lang">
+                    <a href="#!" class="menu-link">Ngôn ngữ</a>
+                    <span class="toggle"><i class="fal fa-chevron-down"></i></span>
+                    <ul class="sub-menu">
+                        <li class="menu-item menu-item-lang--vi active">
+                            <a href="#!" class="menu-link">Tiếng Việt</a>
+                        </li>
+                        <li class="menu-item menu-item-lang--en">
+                            <a href="#!" class="menu-link">Tiếng Anh</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="phone-number d-block">
+                <a href="tel:0962180180">0962.180.180</a>
+            </div>
+        </div>
+    </div>
+    <div class="menu-bars-close"></div>
+</div>
+<script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
+</div>
+</body>
+</html>
